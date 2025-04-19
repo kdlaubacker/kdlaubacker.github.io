@@ -204,6 +204,13 @@ video {
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
+.responsive{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
 .responsive-iframe {
   position: absolute;
   top: 0;
@@ -1262,6 +1269,11 @@ header {
     background-color: var(--primary-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 1rem; }
+
+      @media (max-width: 576px) {
+        .col {
+        flex: fit-content;
+    }}
 
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
